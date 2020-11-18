@@ -16,3 +16,8 @@ Here are some todos:
   3a. Ideally you could config this package to either display the routes in browser, or console.log them
   3b. Minimize dependencies: if displaying your routes in browser, res.send it so as to not depend on ejs
 
+## Running this project
+Clone down, `npm index.js`, and visit localhost:3000/routes
+
+## Contributing
+Cut a feature branch and make a PR!
