@@ -2,6 +2,8 @@
 
 I'm used to rails, where you have a command to inventory all the routes that your app has. It's very helpful for figuring out if you've build the routes you think you've built.
 
+![rails routes inventory command output](rails_command_output.png)
+
 You can do something similar by inspecting the app object in express, specifically `app._router.stack`. Here are things I've found out:
 1. Any top-level routes (created w/ `app.verb`) are easily inspectable within the `app._router.stack` array. These have a `.route.path` property.
 2. If an instance of Router is mounted (ie `app.use('/some/route', someRouter)`, it has a `.handle.stack` property, and this property contains `someRouter`'s controller methods.
